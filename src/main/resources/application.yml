@@ -1,0 +1,18 @@
+server:
+  host: 127.0.0.1 # This should be your server's real IP
+  port: 60017
+logging:
+  level:
+    root: info
+ftp:
+  port: 53100  #FTP监听命令端口号
+  passive-ports: 53101-53103  #FTP传输文件的被动端口号
+    #不限制最大登录用户数,到user-configuration-name的用户配置文件
+  max-login: 0
+  max-threads: 0
+ 
+file:
+  #jdk生成的keystore文件名称
+  keystore-name: exckeystore.jks
+    #用户配置文件名称
+  user-configuration-name: users.properties
